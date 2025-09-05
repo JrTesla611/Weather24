@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather 24</title>
+<link rel="icon" type="image/png" href="icon.png">
+<style>
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: url('bg.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-box {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 80%;
+    max-width: 800px;
+    color: #fff; /* white text */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    font-family: "Courier New", Consolas, monospace; /* Notepad font */
+    position: relative;
+}
+
+.header {
+    font-size: 24px; /* bigger */
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.content {
+    font-size: 18px; /* bigger text */
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 20px; /* bigger headings */
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Back button styling */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Courier New", Consolas, monospace;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+</style>
+</head>
+<body>
+    <div class="big-box">
+        <!-- Back button -->
+        <button class="back-btn" onclick="window.location.href='index.html'">Back</button>
+
+        <div class="header">Privacy Policy</div>
+        <div class="content">
+          <p><strong>Effective Date:</strong> [31-07-2045]</p>
+          <h2>1. Use of Data</h2>
+          <p>Data is used only to display forecasts from the Open-Meteo API.</p>
+
+          <h2>2. Data Sharing</h2>
+          <p>No personal information is collected, sold, or shared. Weather data is processed only through Open-Meteo.</p>
+
+          <h2>3. Security</h2>
+          <p>Reasonable measures are applied to protect data, but no system is 100% secure.</p>
+
+          <h2>4. Contact</h2>
+          <p>For inquiries: [Your Email]</p>
+        </div>
+
+        <div class="header">Terms of Service</div>
+        <div class="content">
+          <p><strong>Effective Date:</strong> [31-07-2045]</p>
+
+          <h2>1. Purpose</h2>
+          <p>The App provides forecasts using Open-Meteo data for informational use only.</p>
+
+          <h2>2. Accuracy</h2>
+          <p>We cannot guarantee accuracy or availability of weather data. Do not rely solely on the App for safety decisions.</p>
+
+          <h2>3. Acceptable Use</h2>
+          <p>Users must not misuse the App or interfere with its operation.</p>
+
+          <h2>4. Limitation of Liability</h2>
+          <p>We are not liable for damages arising from use of the App. Use at your own risk.</p>
+
+          <h2>5. Modifications</h2>
+          <p>These Terms may change at any time. Continued use means acceptance.</p>
+        </div>
+    </div>
+</body>
+</html>
